@@ -18,7 +18,7 @@ codename: whyred
 cpu: Kryo 260
 cpu_cores: '8'
 cpu_freq: 1.8 GHz
-deprecated: true
+deprecated: false
 deprecated_versions:
 - thirteen
 - thirteen_plus
