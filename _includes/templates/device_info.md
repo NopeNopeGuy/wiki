@@ -4,7 +4,7 @@
 {% endif %}
 
 ## Get AOSP ROMs for the {{ device.vendor }} {{ device.name }}
-[Get the builds here](https://noperoms.github.io/{{ device.codename }})
+[Get the builds here](https://noperoms.github.io/2023-07-05-{{ device.codename }})
 
 ## Guides
 

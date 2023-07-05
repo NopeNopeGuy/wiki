@@ -22,7 +22,7 @@ Follow your [device's installation guide]({{ path_prefix | append: "/install" | 
 
 The updater app does not support upgrades from one version of AOSP ROM to another, and will block installation to any update for a different version. Upgrading manually requires similar steps to installing AOSP ROM for the first time.
 
-1. Download the [AOSP ROM install package](https://noperoms.github.io/{{ device.codename }}) that you'd like to install or [build]({{ path_prefix | append: "/build" | relative_url }}) the package yourself.
+1. Download the [AOSP ROM install package](https://noperoms.github.io/2023-07-05-{{ device.codename }}) that you'd like to install or [build]({{ path_prefix | append: "/build" | relative_url }}) the package yourself.
 2. Make sure your computer has working `adb`. Setup instructions can be found [here]({{ "help/adb-fastboot-guide/" | relative_url }}).
 3. Enable [USB debugging]({{ "help/adb-fastboot-guide/#setting-up-adb" | relative_url }}) on your device.
 4. Reboot into recovery by running `adb reboot recovery`, or by performing the following:
