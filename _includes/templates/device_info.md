@@ -3,7 +3,7 @@
 {% include alerts/specific/important_bootloader_not_unlockable.html %}
 {% endif %}
 
-## Get PixelExperience for the {{ device.vendor }} {{ device.name }}
+## Get AOSP ROMs for the {{ device.vendor }} {{ device.name }}
 [Get the builds here](https://noperoms.github.io/{{ device.codename }})
 
 ## Guides
@@ -38,4 +38,4 @@
 
 ## Find help online
 
-You can find assistance with PixelExperience on [our Telegram group](https://t.me/nopenoperoms).
+You can find assistance with AOSP ROMs on [our Telegram group](https://t.me/nopenoperoms).
