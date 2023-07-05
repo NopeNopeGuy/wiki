@@ -27,7 +27,11 @@ download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>P
   release.
 gpu: Adreno 509
 install_method: fastboot_xiaomi
-maintainers: []
+deprecated: false
+maintainers:
+- NopeRoms
+versions:
+- thirteen
 name: Redmi Note 5 Global / Pro
 network:
 - 2G GSM
