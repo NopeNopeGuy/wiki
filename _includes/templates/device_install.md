@@ -67,7 +67,7 @@ There are no recovery installation instructions for this discontinued device.
 
 ## Installing AOSP ROM from recovery
 
-1. Download the [AOSP ROM installation package](https://noperoms.github.io/2023-07-05-) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
+1. Download the [AOSP ROM installation package](https://noperoms.github.io/2023-07-05-{ "devices/" | append: device.codename | append: "/build" | relative_url }) that you would like to install or build the package yourself.
 {%- if device.is_retrofit_dynamic_partitions and device.is_ab_device != true %}
     * You will also need to flash an empty super image since your device uses retrofitted dynamic partitions: download super_empty.img from the directory named with the latest date [here](https://mirror.math.princeton.edu/pub/lineageos/full/{{ device.codename }}/)
 {%- endif %}
@@ -77,15 +77,15 @@ There are no recovery installation instructions for this discontinued device.
         {% include templates/recovery_boot_lge.md %}
     {% endif %}
 {% if device.uses_custom_recovery %}
-3. Now tap **Wipe**.
-4. Now tap **Format Data** and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage.
-5. Sideload the AOSP ROM `.zip` package:
-    * On the device, select "Advanced", "ADB Sideload", then swipe to begin sideload.
+2. Go to the Dustbin Icon
+3. Now tap **Format Data** and type yes and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage.
+4. Sideload the AOSP ROM `.zip` package:
+    * On the device, select the 3 bars at the bottom, "ADB Sideload", then swipe to begin sideload.
     * On the host machine, sideload the package using: `adb sideload filename.zip`.
         {% include alerts/specific/tip_adb_flash_success.html %}
 {% else %}
-3. Now tap **Factory Reset**, then **Format data / factory reset** and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage, as well as format your cache partition (if you have one).
-4. Return to the main menu.
+2. Go to the Dustbin Icon
+3. Now tap **Format Data** and type yes and continue with the formatting process. This will remove encryption and delete all files stored in the internal storage.
 {%- if device.is_retrofit_dynamic_partitions and device.is_ab_device != true %}
 5. Flash empty super image:
     * On the device, enter fastbootd mode by selecting **Advanced**, **Enter fastboot**.
@@ -96,7 +96,7 @@ There are no recovery installation instructions for this discontinued device.
         {% include alerts/specific/note_retrofit_sideload_failed.html %}
 {%- endif %}
 {%- endif %}
-5. Sideload the AOSP ROM `.zip` package:
+4. Sideload the AOSP ROM `.zip` package:
     * On the device, select "Apply Update", then "Apply from ADB" to begin sideload.
     * On the host machine, sideload the package using: `adb sideload filename.zip`.
         {% include alerts/specific/tip_adb_flash_success.html %}
