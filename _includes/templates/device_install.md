@@ -67,7 +67,7 @@ There are no recovery installation instructions for this discontinued device.
 
 ## Installing AOSP ROM from recovery
 
-1. Download the [AOSP ROM installation package](https://noperoms.github.io/2023-07-05-{ "devices/" | append: device.codename | append: "/build" | relative_url }) that you would like to install or build the package yourself.
+1. Download the [AOSP ROM installation package](https://noperoms.github.io/2023-07-05-rm6786) that you would like to install or build the package yourself.
 {%- if device.is_retrofit_dynamic_partitions and device.is_ab_device != true %}
     * You will also need to flash an empty super image since your device uses retrofitted dynamic partitions: download super_empty.img from the directory named with the latest date [here](https://mirror.math.princeton.edu/pub/lineageos/full/{{ device.codename }}/)
 {%- endif %}
